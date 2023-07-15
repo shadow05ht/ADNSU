@@ -1,0 +1,538 @@
+body,
+        html {
+            font-family: 'Lobster', cursive;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: whitesmoke;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: skyblue;
+            position: sticky;
+            top: 0;
+            scroll-behavior: smooth;
+            z-index: 2;
+        }
+
+        a {
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            padding: 0 7px;
+            font-size: x-large;
+        }
+
+        a:hover {
+            text-shadow: 5px 5px 5px black;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            height: 80px;
+            width: 100px;
+            margin-top: 70px;
+            margin-left: 10px;
+            background-image: url(adnsu/adnsu-logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+            filter: drop-shadow(0px 0px 5px black);
+        }
+
+        .logo:hover {
+            cursor: pointer;
+            filter: drop-shadow(5px 5px 15px black);
+            scale: 1.03;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            background-clip: text;
+            background-image: url(adnsu/adnsu.jpg);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-size: cover;
+            filter: blur(1px);
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        h2:hover {
+            scale: 1.13;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            margin: 35px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1:hover {
+            text-shadow: 5px 5px 5px cyan;
+        }
+
+
+        .header {
+            padding: 15px;
+            font-size: 25px;
+        }
+
+        .header:hover {
+            text-shadow: 5px 5px 5px cyan;
+        }
+
+        p {
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        p:hover {
+            text-shadow: 5px 5px 5px cyan;
+        }
+
+        .image {
+            height: 200px;
+            width: 380px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(tarixi.jpeg);
+            padding: 20px;
+            border-radius: 30px;
+            border: 5px solid aqua;
+            margin-left: 5px;
+            margin-right: 5px;
+            position: relative;
+            float: left;
+            margin-top: 85px;
+        }
+
+        .image:hover {
+            background-image: url(tarix.jpg);
+            background-size: cover;
+            background-position: center;
+            transition: .4s;
+            border-radius: 30px;
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+            padding: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            filter: drop-shadow(5px 5px 15px black);
+        }
+
+        .img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 5px solid aqua;
+            margin-left: 10px;
+            border-radius: 30px;
+            height: 300px;
+            width: 400px;
+            background-image: url(adnsu/independenc.jpg);
+            margin: 10px;
+            position: relative;
+        }
+
+        .img::before {
+            content: 'Müstəqillik əbədidir';
+            color: skyblue;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 200px;
+            scale: 0;
+        }
+
+        .img:hover::before {
+            font-size: 40px;
+            scale: 1;
+            opacity: 0.6;
+            transition: .4s;
+        }
+
+        .img:hover {
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+            transition: .4s;
+            flex: 1 1 30px;
+            cursor: pointer;
+            filter: drop-shadow(5px 5px 15px black);
+        }
+
+        .adna {
+            width: 400px;
+            height: 250px;
+            background-image: url(adnsu/adna.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 5px solid aqua;
+            margin-left: 10px;
+            margin-bottom: 30px;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .adna::before {
+            content: 'ADNA';
+            position: absolute;
+            background-color: black;
+            color: white;
+            scale: 0;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 200px;
+            border-radius: 30px;
+        }
+
+        .adna:hover::before {
+            transition: .4s;
+            opacity: 0.6;
+            scale: 1;
+            font-size: 40px;
+        }
+
+        .adna:hover {
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+            transition: .4s;
+            cursor: pointer;
+            filter: drop-shadow(5px 5px 15px black);
+        }
+
+        .item {
+            flex: 1 0 300px;
+            font-size: 18px;
+        }
+
+        .footer {
+            line-height: 50px;
+            width: 100%;
+            position: fixed;
+            background-color: skyblue;
+            color: white;
+            bottom: 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: cover;
+            background-image: url(adnsu/adnsu-logo.png);
+            filter: blur(1);
+            font-size: 50px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        ul {
+            margin: 21px;
+        }
+
+        ul:hover {
+            text-shadow: 5px 5px 5px cyan;
+        }
+
+        .Mustafa {
+            background-image: url(m3.jpeg);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            margin-left: 30px;
+            border: 5px solid cyan;
+            position: relative;
+        }
+
+        .Mustafa::before {
+            content: 'Mustafa Babanlı';
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            scale: 0;
+            background-color: black;
+            color: white;
+            position: absolute;
+            line-height: 200px;
+            border-radius: 30px;
+        }
+
+        .Mustafa:hover::before {
+            scale: 1;
+            text-align: center;
+            opacity: 0.56;
+            font-size: 40px;
+        }
+
+        .Mustafa:hover {
+            cursor: pointer;
+            filter: drop-shadow(5px 5px 15px black);
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+        }
+
+        .kafedra {
+            background-image: url(m1.jpg);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30px;
+            margin-left: 18px;
+            border: 5px solid cyan;
+        }
+
+        .kafedra:hover {
+            cursor: pointer;
+            filter: drop-shadow(8px 8px 18px black);
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+        }
+
+        .Azii {
+            background-image: url(m2.jpg);
+            height: 200px;
+            width: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30px;
+            margin-left: 18px;
+            border: 5px solid cyan;
+            margin-bottom: 25px;
+        }
+
+        .Azii:hover {
+            cursor: pointer;
+            filter: drop-shadow(8px 8px 18px black);
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+        }
+
+        .t {
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30px;
+            border: 5px solid cyan;
+            margin-left: 18px;
+            margin-bottom: 30px;
+            float: left;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .t::before {
+            position: absolute;
+            content: 'ADNSU';
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 30px;
+            scale: 1;
+            opacity: 0.6;
+            line-height: 200px;
+            font-size: 40px;
+        }
+
+        .t:hover::before {
+            scale: 0;
+        }
+
+        .t:hover {
+            cursor: pointer;
+            filter: drop-shadow(8px 8px 18px black);
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+        }
+
+        .vertical {
+            background-color: darkseagreen;
+            width: max-content;
+            font-size: 50px;
+            writing-mode: vertical-lr;
+            float: left;
+            width: 30px;
+            height: 300px;
+        }
+
+        .one {
+            background-image: url(telebeler/t1.jpeg);
+        }
+
+        .two {
+            background-image: url(telebeler/t2.jpg);
+        }
+
+        .three {
+            background-image: url(telebeler/t3.jpg);
+        }
+
+        .four {
+            background-image: url(telebeler/t4.jpg);
+        }
+
+        .five {
+            background-image: url(telebeler/t5.jpg);
+        }
+
+        .six {
+            background-image: url(telebeler/t6.jpg);
+        }
+
+        .seven {
+            background-image: url(telebeler/t7.jpg);
+        }
+
+        .eight {
+            background-image: url(telebeler/t8.jpg);
+        }
+
+        .nine {
+            background-image: url(telebeler/t9.jpg);
+        }
+
+        .ten {
+            background-image: url(telebeler/t10.jpg);
+        }
+
+        .tool {
+            margin-bottom: 200px;
+        }
+
+        ::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        #ADNSU {
+            background-color: teal;
+        }
+
+        #Tarixi {
+            background-color: cadetblue;
+        }
+
+        #Fakültələr {
+            background-color: teal;
+        }
+
+        #Tələbələr {
+            background-color: cadetblue;
+        }
+
+        #Otaqlar {
+            background-color: teal;
+        }
+
+        #Əlaqələri {
+            background-color: cadetblue;
+        }
+
+        .elaqe {
+            height: 200px;
+            width: 300px;
+            background-image: url(elaqe.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30px;
+            border: 5px solid cyan;
+            margin-top: 100px;
+            margin-left: 20px;
+        }
+
+        .elaqe:hover {
+            cursor: pointer;
+            filter: drop-shadow(8px 8px 18px black);
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+        }
+
+        .otaq {
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            border: 5px solid cyan;
+            margin-left: 20px;
+            margin-bottom: 40px;
+            float: left;
+        }
+        .otaq:hover{
+            cursor: pointer;
+            filter: drop-shadow(8px 8px 18px black);
+            border: 4px solid blue;
+            outline: 8px solid skyblue;
+        }
+
+        .a {
+            background-image: url(otaqlar/a.jpeg);
+        }
+
+        .b {
+            background-image: url(otaqlar/b.jpg);
+        }
+
+        .c {
+            background-image: url(otaqlar/c.jpeg);
+        }
+
+        .d {
+            background-image: url(otaqlar/d.jpeg);
+        }
+
+        .e {
+            background-image: url(otaqlar/e.jpg);
+        }
